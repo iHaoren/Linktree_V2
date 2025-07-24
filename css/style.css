@@ -40,8 +40,9 @@ body {
 }
 
 .profile img {
-  width: 10rem;
-  height: auto;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 50%;
   border: 1px solid #111;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.9);
