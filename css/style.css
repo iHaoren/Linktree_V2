@@ -47,7 +47,7 @@ body {
   border: 1px solid #111;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.9);
   margin-bottom: 1rem;
-  animation: backInDown 0.9s ease-out both;
+  animation: backInDown 0.7s ease-out both;
 }
 
 .profile .nickname {
@@ -55,11 +55,13 @@ body {
   font-weight: 900;
   margin-bottom: 0.5rem;
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  animation: backInLeft 1s ease-out both;
 }
 
 .profile .bio {
   font-size: 0.8rem;
   font-weight: 700;
+  animation: backInRight 1.5s ease-out both;
 }
 /* Profile end */
 
