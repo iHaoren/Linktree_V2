@@ -10,28 +10,30 @@ html {
   justify-content: center;
   height: 100%;
   font-family: "Inter", sans-serif;
-  background-color: #fff;
+  background: none;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background: linear-gradient(45deg, #576d7d, #577d7a);
 }
 
 body {
-  border-radius: 18px;
-  overflow: hidden;
+  border-radius: 1rem;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
-  background: linear-gradient(#a39bda, #9eabda, #9bb3da, #c29bda);
-  min-height: 140vh;
   min-width: 320px;
   max-width: 480px;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 1.5rem;
+  overflow-y: auto;
 }
 
 .wrapper {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(#a39bda, #9eabda, #9bb3da, #c29bda);
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 100%;
+  padding: 1.6rem;
 }
 
 /* Profile start */
@@ -47,6 +49,7 @@ body {
   border: 1px solid #111;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.9);
   margin-bottom: 1rem;
+  animation: backInDown 0.9s ease-out both;
 }
 
 .profile .nickname {
@@ -119,3 +122,72 @@ footer a {
   color: #3149ff;
 }
 /* footer end */
+
+/* Keyframes buat animasi */
+@keyframes backInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-1200px) scale(0.7);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes backInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-1200px) scale(0.7); 
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(0px) scale(1.05);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes backInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(1200px) scale(0.7); 
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(0px) scale(1.05);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+.back-in-left-1s {
+  animation: backInLeft 0.9s ease-out both;
+}
+.back-in-left-2s {
+  animation: backInLeft 1.2s ease-out both;
+}
+.back-in-left-3s {
+  animation: backInLeft 1.5s ease-out both;
+}
+.back-in-left-4s {
+  animation: backInLeft 1.8s ease-out both;
+}
+
+.back-in-right-1s {
+  animation: backInRight 0.9s ease-out both;
+}
+.back-in-right-2s{
+  animation: backInRight 1.2s ease-out both;
+}
+.back-in-right-3s {
+  animation: backInRight 1.5s ease-out both;
+}
+.back-in-right-4s {
+  animation: backInRight 1.8s ease-out both;
+}
