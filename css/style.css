@@ -10,8 +10,7 @@ html {
   justify-content: center;
   height: 100%;
   font-family: "Inter", sans-serif;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
   scroll-behavior: smooth;
   background: linear-gradient(45deg, #576d7d, #577d7a);
 }
@@ -22,6 +21,7 @@ body {
   max-width: 480px;
   min-height: 100vh;
   margin: 0 auto;
+  overflow-x: hidden;
   overflow-y: auto;
   background: linear-gradient(#a39bda, #9eabda, #9bb3da, #c29bda);
 }
@@ -31,7 +31,7 @@ body {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  padding: 1.6rem;
+  padding: 2.6rem;
 }
 
 /* Profile start */
@@ -46,7 +46,6 @@ body {
   border-radius: 50%;
   border: 1px solid #111;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.9);
-  margin: 1.6rem 0;
   animation: backInDown 0.7s ease-out both;
 }
 
@@ -88,7 +87,8 @@ body {
   align-items: center;
   padding-left: 1.5rem;
   padding-right: 3rem;
-  width: 350px;
+  min-width: 340px;
+  max-width: 380px;
   height: 60px;
   background: linear-gradient(45deg, #f5d2ef, #ead2f5);
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
