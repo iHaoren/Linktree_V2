@@ -6,7 +6,7 @@
 
 ## 🖼️ Preview
 
-![Linktree V2 Preview](./img/preview%20Linktree.png)
+![Linktree V2 Preview](./img/Preview_design.png)
 
 ## ✨ Fitur
 
